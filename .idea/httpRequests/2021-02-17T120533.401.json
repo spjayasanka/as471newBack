@@ -1,0 +1,7 @@
+{
+  "timestamp": "2021-02-17T06:35:33.209+00:00",
+  "status": 401,
+  "error": "Unauthorized",
+  "message": "Unauthorized",
+  "path": "/getAllProducts"
+}

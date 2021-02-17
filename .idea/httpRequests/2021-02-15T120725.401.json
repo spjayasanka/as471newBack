@@ -1,0 +1,7 @@
+{
+  "timestamp": "2021-02-15T06:37:25.072+00:00",
+  "status": 401,
+  "error": "Unauthorized",
+  "message": "Unauthorized",
+  "path": "/api/saveProduct"
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2021-02-15T06:37:41.460+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
+  "message": "Required request body is missing: public org.springframework.http.ResponseEntity<?> com.w2p.controller.JwtAuthenticationController.saveUser(com.w2p.model.dto.UserDTO) throws java.lang.Exception",
+  "path": "/register"
+}

@@ -1,0 +1,79 @@
+GET http://localhost:8080/viewCart
+
+<> 2021-02-17T160133.401.json
+
+###
+
+POST http://localhost:8080/saveProduct
+Content-Type: application/json
+
+{
+  "name": "testProduct",
+  "price": 1000,
+  "description": "descfitopnsdflnfv dfnv"
+}
+
+<> 2021-02-17T120729.401.json
+
+###
+
+POST http://localhost:8080/saveProduct
+Content-Type: application/json
+{:
+  "name": "testProduct",
+  "price": 1000,
+  "description": "descfitopnsdflnfv dfnv"
+}:
+
+<> 2021-02-17T120659.400.html
+
+###
+
+GET http://localhost:8080/getAllProducts
+
+<> 2021-02-17T120533.401.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "username": "priyanath",
+  "password": "priyanath"
+}
+
+<> 2021-02-15T120944.200.json
+
+###
+
+POST http://localhost:8080/register?username=priyanath&password=priyanth
+
+<> 2021-02-15T120816.400.json
+
+###
+
+POST http://localhost:8080/register
+
+<> 2021-02-15T120741.400.json
+
+###
+
+POST http://localhost:8080/register
+
+<> 2021-02-15T120725.400.json
+
+###
+
+POST http://localhost:8080/api/saveProduct
+
+<> 2021-02-15T120725.401.json
+
+###
+
+POST http://localhost:8080/register
+
+<> 2021-02-15T120724.400.json
+
+###
+
