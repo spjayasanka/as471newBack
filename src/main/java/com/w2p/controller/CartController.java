@@ -17,13 +17,24 @@ public class CartController {
 
     @PostMapping("/addToCart")
     public void addToCart(@RequestBody ProductDto productDto){
-        System.out.printf(productDto.getName());
+        System.out.println(productDto.getName());
         cartService.addToCart(productDto);
     }
 
     @GetMapping("/viewCart")
     public List<Cart> viewCart(){
-        System.out.println("controller cart");
+//        System.out.println("controller cart");
         return cartService.viewCart();
+    }
+
+    @PostMapping("/removeItem")
+    public void removeItem(@RequestBody CartDto cartDto){
+//        System.out.println("remove test");
+        cartService.removeItem(cartDto.getId());
+    }
+
+    @PostMapping("/deleteCart/{username}")
+    public void deleteCart(@PathVariable("username") String username) {
+        cartService.deleteCart(username);
     }
 }

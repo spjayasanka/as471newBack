@@ -41,4 +41,13 @@ public class CartService {
 
         return cartRepository.getAllByUserName(userName);
     }
+
+    public void removeItem(int id) {
+        System.out.println("remove service test");
+        cartRepository.deleteById(id);
+    }
+
+    public void deleteCart(String username) {
+        cartRepository.deleteByUserName(username);
+    }
 }
