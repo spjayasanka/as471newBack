@@ -1,11 +1,9 @@
 package com.w2p.controller;
 
 import com.w2p.model.entity.User;
-import com.w2p.service.JwtUserDetailsService;
+import com.w2p.services.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @CrossOrigin

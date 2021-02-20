@@ -1,4 +1,4 @@
-package com.w2p.service;
+package com.w2p.services;
 
 import com.w2p.model.dto.ProductDto;
 import com.w2p.model.entity.Product;
@@ -69,6 +69,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product getProductById(Integer id) {
         return productRepository.findProductById(id);
+    }
+
+    @Override
+    public void deleteById(Integer id) {
+        productRepository.deleteById(id);
     }
 
 }

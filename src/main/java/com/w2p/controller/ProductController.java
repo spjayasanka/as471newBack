@@ -1,7 +1,7 @@
 package com.w2p.controller;
 import com.w2p.model.dto.ProductDto;
 import com.w2p.model.entity.Product;
-import com.w2p.service.ProductService;
+import com.w2p.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,6 +32,11 @@ public class ProductController {
     @PutMapping(value = "/updateProduct/{id}")
     public Product updateProduct(@PathVariable("id") Integer id, @RequestBody ProductDto dto){
         return productService.updateProduct(id, dto);
+    }
+
+    @PostMapping(value = "/deleteById")
+    public void deleteById(@RequestBody ProductDto productDto) {
+        productService.deleteById(productDto.getId());
     }
 
 

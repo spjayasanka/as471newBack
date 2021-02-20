@@ -1,6 +1,5 @@
-package com.w2p.service;
+package com.w2p.services;
 
-import com.w2p.model.dto.CartDto;
 import com.w2p.model.dto.ProductDto;
 import com.w2p.model.entity.Cart;
 import com.w2p.repository.CartRepository;

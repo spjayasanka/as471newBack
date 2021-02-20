@@ -3,7 +3,7 @@ package com.w2p.controller;
 import com.w2p.model.dto.CartDto;
 import com.w2p.model.dto.ProductDto;
 import com.w2p.model.entity.Cart;
-import com.w2p.service.CartService;
+import com.w2p.services.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
